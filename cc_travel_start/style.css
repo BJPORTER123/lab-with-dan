@@ -1,0 +1,172 @@
+body {
+  font-family: Roboto, sans-serif ;
+}
+
+header {
+  height: 4rem;
+  background-color: #4584b1;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+ margin: 40px;
+}
+
+nav {
+  background-color: #103594;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav > ul {
+  color:  white;
+  font-size: large;
+  margin-right: 1rem ;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav > ul > li > a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+  text-decoration: underline;
+}
+
+.where-togo{
+  background-color:#040E27;
+  padding: 1rem;
+}
+
+.where-togo > h3{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.search-form{
+  display: flex;
+}
+
+.input-field{
+  width: auto;
+  margin-right: 0px;
+}
+
+input {
+  width: auto;
+  height: 35px;
+  padding-left: 1rem;
+  border-radius:5px ;
+}
+
+.nice-select {
+  width: auto;
+  height: 38px;
+  padding-left: 1rem;
+  border-radius:5px ;
+  font-size: medium;
+  color: rgb(185, 182, 182);
+}
+
+.search-btn {
+  width: auto;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius:9px ;
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  background-color: rgb(201, 52, 52);
+  cursor: cell;
+}
+
+.container {
+  display: grid;
+ justify-content: center;
+}
+
+.row {
+  grid-template-areas:
+  'single-destination single-destination single-destination'
+  'single-destination single-destination single-destination'
+  'single-destination single-destination single-destination';
+  grid-template-columns: 30% 30% 30%;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.single-destination {
+  margin-right: auto;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.testimonial-area {
+  background-color: #4687b6;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  /* Write your code here */
+}
+
+.single-testmonial{
+  grid-area: single-destination;
+  background-color: rgb(237, 237, 237);
+  height: 20rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #040E27;
+  color: white;
+}
+
+.footer-widget p {
+  color: white;
+  
+}
+
+.footer-widget a:hover {
+   text-decoration: underline;
+}
+
+.footer-widget ul li {
+  color: white;
+  padding: 4px;
+}
+
+.footer-widget a {
+  color: white;
+}
+
+
+
+
+/* Media Queries */
+/* Check out the media queries lesson */
+/* Note that min-width is equivalent to >= */
+/* max-width (as below) is like <= */
+
+@media (max-width: 720px) {
+    /* Add some responsive code here */
+    /* Make the destinations stack on top of each other */
+    /* Make the form input stack on top of each other */
+}
